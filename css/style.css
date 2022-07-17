@@ -1,13 +1,22 @@
-.hidden {
-  display: none;
-}
+form input[type="text"] {width: 100%; background: none; color: #ffffff; border: 1px solid #cccccc; padding: 1rem; box-sizing: border-box; border-radius: .25rem;}
+form button {box-sizing: border-box; width: 100%; height:3rem; background: rgba(255,255,255, .875); border: none; border-radius: .25rem; color: #000000; font-size: 1.125rem; margin-top: .5rem; cursor: pointer;}
+
+.hidden {display: none;}
 .bgImg {position: absolute; z-index:0; top: 0; left: 0; width: 100%; height: 100%;}
-main {position: absolute; top: 0; left: 0; z-index:1; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; background-color: rgba(0, 0, 0, .9); color: #ffffff;}
-main .wrapper {width: 560px; text-align: center;}
-#clock {font-weight: 100; font-size: 6rem; letter-spacing: .25rem;}
-#greeting {font-weight: 500; font-size: 2rem;}
-input[type="text"] {width: 100%; background: none; color: #ffffff; border: 1px solid #cccccc; padding: 1rem; box-sizing: border-box; border-radius: .25rem;}
-#todo-form button {width: 100%; background: none; color: #ffffff; font-size: 2rem;}
-#quote {word-break: break-all; font-weight: 400; font-size: .875rem; line-height: 1.5rem; color: #dddddd; margin: 1rem;}
+main {position: absolute; top: 0; left: 0; z-index:1; width: 100%; height: 100%; background-color: rgba(0, 0, 0, .9); color: #ffffff; display: flex; justify-content: center; align-items: center; flex-direction: column;}
+#login-area {width: 560px;}
+#quote {word-break: break-all; text-align: center; font-weight: 400; font-size: .875rem; line-height: 1.5rem; color: #dddddd; margin: 1rem;}
 #quote .quote {display: block;}
 #quote .author {display: block; margin-top: 1rem;}
+#wrapper {width: 560px;}
+header {position: absolute; top: 0; left: 0; width: 100%; box-sizing: border-box; padding: 1rem; text-align: right;}
+#greeting {font-weight: 500; font-size: 1.125rem; position: absolute; top: 1rem; left: 1rem}
+#weather {font-weight: 200; font-size: 1rem; display: inline-block;}
+#clock {font-weight: 200; font-size: 1rem; letter-spacing: .25rem; display: inline-block;}
+#btn-logout {font-weight: 400; font-size: 1rem; background: rgba(255, 255, 255,6); color: #000000; border: none; border-radius: .125rem; cursor: pointer;}
+
+.todo-area h2 {text-align: center; font-weight: bold; font-size: 2rem; margin-bottom: 2rem;}
+#todo-list {border: 1px solid rgba(255, 255, 255, 8); border-radius: .25rem; margin-top: 2rem; box-sizing: border-box; padding: .25rem;}
+#todo-list li {border: 1px solid rgba(255, 255, 255, 8); border-radius: .25rem; text-align: left; padding: .25rem; position: relative; box-sizing: border-box; padding-right: 4rem;}
+#todo-list li+li {margin-top: .25rem}
+#todo-list button {cursor: pointer; position: absolute; top: 0; right: 0;}
