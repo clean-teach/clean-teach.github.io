@@ -1,0 +1,13 @@
+.hidden {
+  display: none;
+}
+.bgImg {position: absolute; z-index:0; top: 0; left: 0; width: 100%; height: 100%;}
+main {position: absolute; top: 0; left: 0; z-index:1; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; background-color: rgba(0, 0, 0, .9); color: #ffffff;}
+main .wrapper {width: 560px; text-align: center;}
+#clock {font-weight: 100; font-size: 6rem; letter-spacing: .25rem;}
+#greeting {font-weight: 500; font-size: 2rem;}
+input[type="text"] {width: 100%; background: none; color: #ffffff; border: 1px solid #cccccc; padding: 1rem; box-sizing: border-box; border-radius: .25rem;}
+#todo-form button {width: 100%; background: none; color: #ffffff; font-size: 2rem;}
+#quote {word-break: break-all; font-weight: 400; font-size: .875rem; line-height: 1.5rem; color: #dddddd; margin: 1rem;}
+#quote .quote {display: block;}
+#quote .author {display: block; margin-top: 1rem;}
